@@ -1,0 +1,26 @@
+<!-- app/views/layouts/_navbar.html.erb -->
+
+<nav class="bg-gray-800 py-4">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center">
+        <div class="flex-shrink-0">
+          <!-- Your logo or site title here -->
+          <span class="text-white font-semibold text-xl">EliteAthleteX</span>
+        </div>
+      </div>
+      <div class="ml-10 space-x-4">
+        <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Bio Mechanist</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Mental Health Professional</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Nutritionist</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Professional Athlete</a>
+        <% if current_user %>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Profile</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Logout</a>
+        <% else %>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Login</a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</nav>

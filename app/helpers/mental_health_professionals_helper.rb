@@ -1,0 +1,2 @@
+module MentalHealthProfessionalsHelper
+end
